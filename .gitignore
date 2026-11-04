@@ -1,3 +1,7 @@
-echo backend/vendor/ > .gitignore
-echo backend/.env >> .gitignore
-echo frontend/node_modules/ >> .gitignore
+# Backend dependencies and environment settings (Laravel)
+backend/vendor/
+backend/.env
+
+# Frontend dependencies and build output (React + Vite)
+frontend/node_modules/
+frontend/dist/
