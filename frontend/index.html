@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ShopSphere — Find your kind of extraordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="announcement">✨ New season, new finds — <strong>free shipping over $75</strong> · Demo storefront</div>
+
+  <div class="nav">
+    <div class="wrap navinner">
+      <a href="#home" class="brand">shop<span>sphere.</span></a>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#shop">Shop All</a>
+        <a href="#offers">Offers</a>
+      </div>
+      <label class="search">⌕ <input id="search" placeholder="Search your next favorite..." aria-label="Search products"></label>
+      <button class="iconbtn" id="cartToggle" aria-label="Open cart">🛍️<span class="count" id="cartCount">0</span></button>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">THE NEW EDIT · 2026</div>
+        <h1>Find your kind of <em>extraordinary.</em></h1>
+        <p>Thoughtfully curated essentials, statement pieces, and little joys. Discover more of what makes you, you.</p>
+        <a class="primary" href="#shop">Explore Collection ↗</a>
+      </div>
+      <div class="hero-image">
+        <div class="floating"><b>UP TO 40% OFF</b>Fresh finds, better prices</div>
+      </div>
+    </div>
+
+    <div class="benefits">
+      <div class="benefit">
+        <i>🚚</i>
+        <div><strong>Free Shipping</strong><small>On orders over $75</small></div>
+      </div>
+      <div class="benefit">
+        <i>↩️</i>
+        <div><strong>Easy Returns</strong><small>30-day return policy</small></div>
+      </div>
+      <div class="benefit">
+        <i>🔒</i>
+        <div><strong>Secure Shopping</strong><small>Checkout coming soon</small></div>
+      </div>
+    </div>
+
+    <section class="section" id="categories">
+      <div class="sectionhead">
+        <div>
+          <div class="eyebrow">SHOP YOUR WAY</div>
+          <h2>Explore Categories</h2>
+        </div>
+        <a href="#shop">View everything ↗</a>
+      </div>
+      <div class="categories">
+        <a class="category" href="#shop" data-category="Fashion">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=650&q=80" alt="Fashion">
+          <strong>Fashion ↗</strong>
+        </a>
+        <a class="category" href="#shop" data-category="Electronics">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=650&q=80" alt="Electronics">
+          <strong>Electronics ↗</strong>
+        </a>
+        <a class="category" href="#shop" data-category="Accessories">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=650&q=80" alt="Accessories">
+          <strong>Accessories ↗</strong>
+        </a>
+        <a class="category" href="#shop" data-category="Lifestyle">
+          <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=650&q=80" alt="Lifestyle">
+          <strong>Lifestyle ↗</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="sectionhead">
+        <div>
+          <div class="eyebrow">CURATED FOR YOU</div>
+          <h2>Trending Right Now</h2>
+        </div>
+        <a href="#offers">Special offers ↗</a>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="All">All Products</button>
+        <button class="filter" data-filter="Fashion">Fashion</button>
+        <button class="filter" data-filter="Electronics">Electronics</button>
+        <button class="filter" data-filter="Accessories">Accessories</button>
+        <button class="filter" data-filter="Lifestyle">Lifestyle</button>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <div class="promo" id="offers">
+      <div class="content">
+        <div class="eyebrow">LIMITED-TIME EDIT</div>
+        <h2>Small details.<br>Big difference.</h2>
+        <p>Elevate the everyday with fresh pieces selected just for you. Find something worth falling for.</p>
+        <a class="primary" href="#shop">Shop the Edit ↗</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85" alt="Curated fashion collection">
+    </div>
+
+    <div class="newsletter">
+      <div class="eyebrow">STAY IN THE LOOP</div>
+      <h2>Good things in your inbox.</h2>
+      <p>Get style inspiration, fresh arrivals, and exclusive offers.</p>
+      <form class="subscribe" id="newsletter">
+        <input type="email" placeholder="Your email address" aria-label="Email address" required>
+        <button>Subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footerinner">
+      <div>
+        <div class="brand">shop<span>sphere.</span></div>
+        <p>Discover your everyday extraordinary.</p>
+      </div>
+      <p>© 2026 ShopSphere · Frontend demo · Made with ♥</p>
+    </div>
+  </footer>
+
+  <aside class="cartpanel" id="cartPanel" aria-label="Shopping cart">
+    <header>
+      <h2>Your Bag 🛍️</h2>
+      <button id="closeCart" aria-label="Close cart">×</button>
+    </header>
+    <div class="cartitems" id="cartItems"></div>
+    <div class="total">
+      <span>Subtotal</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="primary" id="checkout">Checkout (Demo Only)</button>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
